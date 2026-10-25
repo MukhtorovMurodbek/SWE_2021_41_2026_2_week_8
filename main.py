@@ -20,12 +20,15 @@ a list of integers.
     Returns:
         The sum of the squares of all even numbers in the list.
 """
-# TODO: Implement sum_of_squares_of_even
-    pass
+    result = 0
+    for i in even_int_list:
+        result+=i*i
+    return result
 # Main function
 def main():
     # Example list
     int_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    # print(sum_of_squares_of_even(int_list))
     even_int_list = even_list(int_list)
     output = sum_of_squares_of_even(even_int_list)
     print(output)
